@@ -17,7 +17,7 @@ docker-compose -f postgresql.yml down
 
 # Docker
 
-## MysQL
+## MySQL
 ```
 sudo docker run -it -d --name mysql-container -p 3306:3306 --network techbankNet -e MYSQL_ROOT_PASSWORD=techbankRootPsw --restart always -v mysql_data_container:/var/lib/mysql mysql:latest
 ```
