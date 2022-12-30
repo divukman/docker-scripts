@@ -21,3 +21,8 @@ docker-compose -f postgresql.yml down
 ```
 sudo docker run -it -d --name mongo-container -p 27017:27017 --network techbankNet --restart always -v mongodb_data_container:/data/db mongo:latest
 ```
+
+## Create Docker Network - techbankNet 
+```
+docker network create --attachable -d bridge techbankNet
+```
