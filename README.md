@@ -13,3 +13,11 @@ Stop:
 ```
 docker-compose -f postgresql.yml down
 ```
+
+
+# Docker
+
+## Mongo
+```
+sudo docker run -it -d --name mongo-container -p 27017:27017 --network techbankNet --restart always -v mongodb_data_container:/data/db mongo:latest
+```
